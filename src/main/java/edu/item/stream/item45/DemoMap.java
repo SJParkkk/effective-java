@@ -24,5 +24,9 @@ public class DemoMap {
             testInt.computeIfAbsent(i, integer -> new HashSet<>()).add(i);
         }
         System.out.println(testInt);
+        String text = "hello java";
+        Arrays.stream(text.split("")).forEach(System.out::print);
+        System.out.println("\nchars() 이용");
+        text.chars().forEach(s-> System.out.print((char)s));
     }
 }
