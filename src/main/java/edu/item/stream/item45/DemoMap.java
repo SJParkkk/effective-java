@@ -15,7 +15,7 @@ public class DemoMap {
         List<String> testMethod = Arrays.asList("ab", "AB", "b","c","d");
         Map<String, Set<String>> test1 = new HashMap<>();
         for (String s : testMethod) {
-            test1.computeIfAbsent(s.toLowerCase(), s1 -> new HashSet<>()).add(s);
+            test1.computeIfAbsent(s.toLowerCase(), s1 -> new TreeSet<>()).add(s);
         }
         System.out.println(test1);
         List<Integer> integers = Arrays.asList(1,2,3,4,1,2,11,22,33,44);

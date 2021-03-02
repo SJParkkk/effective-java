@@ -37,6 +37,7 @@ public class DemoFlatmap {
         List<List<Info>> allMember = new ArrayList();
         allMember.add(newMember);
         allMember.add(oldMembers);
+        //30살이 넘는 회원의 이름을 출력하세요.
         allMember.stream().flatMap(infos -> infos.stream())
                 .filter(info -> info.getAge() > 30)
                 .forEach(s-> System.out.println(s.getName()));
