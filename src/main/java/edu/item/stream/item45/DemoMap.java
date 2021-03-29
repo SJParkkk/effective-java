@@ -18,7 +18,7 @@ public class DemoMap {
             test1.computeIfAbsent(s.toLowerCase(), s1 -> new TreeSet<>()).add(s);
         }
         System.out.println(test1);
-        List<Integer> integers = Arrays.asList(1,2,3,4,1,2,11,22,33,44);
+        List<Integer> integers = Arrays.asList(1,2,3,4,1,2,11,22,33,44,11);
         Map<Integer, Set<Integer>> testInt = new HashMap<>();
         for (Integer i : integers) {
             testInt.computeIfAbsent(i, integer -> new HashSet<>()).add(i);
